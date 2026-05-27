@@ -148,3 +148,20 @@ min(numeros)
 
 # %%
 max(numeros)
+
+
+# %%
+
+x = [1,2,3,4]
+
+retorno_1 = x.append(5)
+# %%
+
+retorno_2 = print("Ola mundo")
+print(retorno_2)
+
+# %%
+
+print(retorno_1 is None)
+print(retorno_2 is None)
+print(retorno_2 is retorno_1)
