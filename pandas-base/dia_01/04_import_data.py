@@ -7,7 +7,7 @@ os.getcwd()
 
 # %%
 
-df = pd.read_csv("../dados/clientes.csv", sep=";")
+df = pd.read_csv("../../dados/clientes.csv", sep=";")
 df
 
 # %%
@@ -29,4 +29,4 @@ df_10
 
 # %%
 
-df_10.to_csv("../dados/top_10_cliente.csv", sep="|", index=False)
+df_10.to_csv("../../dados/top_10_cliente.csv", sep="|", index=False)

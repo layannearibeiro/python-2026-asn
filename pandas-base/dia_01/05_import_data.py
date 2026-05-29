@@ -5,7 +5,7 @@ import gc
 
 # %%
 
-df = pd.read_csv("../dados/transacoes.csv", sep=";", )
+df = pd.read_csv("../../dados/transacoes.csv", sep=";", )
 df
 
 # %%
