@@ -29,3 +29,6 @@ dt = datetime.datetime.now().date()
 [ dt + relativedelta(months=1+i) for i in range(6) ]
 
 # %%
+
+row = df.iloc[0]
+[(row["dt"] + relativedelta(months=1+i)).date() for i in range(row["parcelas"])]
