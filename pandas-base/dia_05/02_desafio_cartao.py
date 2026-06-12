@@ -27,3 +27,5 @@ df_explode.pivot_table(index="dt_fatura_mes", values="valor_parcela", aggfunc="s
 
 dt = datetime.datetime.now().date()
 [ dt + relativedelta(months=1+i) for i in range(6) ]
+
+# %%
