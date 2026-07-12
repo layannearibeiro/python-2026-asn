@@ -30,10 +30,10 @@ for i in range(0,tentativas):
         break
 
     elif numero_chute >  numero_alvo:
-        print("Seu bosta! Errou! Chute algo menor!")
+        print(f"Seu bosta! Errou! Chute algo menor! {numero_chute}")
 
     else:
-        print("Seu bosta! Errou! Chute algo maior!")
+        print(f"Seu bosta! Errou! Chute algo maior! {numero_chute}")
 
 else:
     print("Suas tentativas acabaram! Nos vemos depois...")

@@ -6,7 +6,11 @@ df = pd.read_csv("../../dados/clientes.csv", sep=";")
 df
 
 # %%
+df.sort_values(by="qtdePontos", ascending=False).head(5)
 
+# %%
+df.sort_values(by="qtdePontos", ascending=False).head(5).reset_index(drop=True)
+# %%
 
 df_top_5 = (df.sort_values(by="qtdePontos", ascending=False)
               .head(5)

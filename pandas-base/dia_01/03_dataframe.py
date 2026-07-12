@@ -1,6 +1,7 @@
 # %%
 
 import pandas as pd
+# %%
 
 dados = {
     "idades":  [27, 30, 35, 42, 28, 50, 35, 36, 36],
@@ -12,6 +13,10 @@ dados
 # %%
 
 df = pd.DataFrame(dados)
+df
+
+# %%
+df.describe()
 
 # %%
 

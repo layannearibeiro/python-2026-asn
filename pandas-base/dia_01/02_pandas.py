@@ -2,6 +2,7 @@
 
 import pandas as pd
 
+
 # %%
 
 idades = [27,30,35,42,28,50,35,36,36]

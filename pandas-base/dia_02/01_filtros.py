@@ -1,6 +1,7 @@
 # %%
 
 import pandas as pd
+# %%
 
 df = pd.read_csv("../../dados/clientes.csv", sep=";")
 df.head()
@@ -16,6 +17,26 @@ for i in range(len(idades)):
 
 print(is_menor_18)
 
+
+# %%
+
+nomes_nova = []
+for i in range(len(idades)):
+    if idades[i] < 18:
+        nomes_nova.append(nomes[i])
+
+print(nomes_nova)
+
+
+# %%
+
+idades_nova = []
+for i in idades:
+    if i < 18:
+        idades_nova.append(i)
+
+print(idades_nova)
+
 # %%
 
 # Quem tem youtube no Tmw?
@@ -29,6 +50,11 @@ filtro
 
 
 # %%
+
+df[df["qtdePontos"] > 10000][df["flEmail"] == 1]
+
+
+# %%
 df_pontos_10000 = df[df["qtdePontos"] > 10000]
 df_pontos_10000_email = df_pontos_10000[df["flEmail"] == 1]
 df_pontos_10000_email
@@ -36,12 +62,12 @@ df_pontos_10000_email
 # %%
 
 filtro = (df["qtdePontos"] > 10000) & (df["flTwitch"] == 1)
-df[filtro].shape
+df[filtro].shape # condição E
 
 # %%
 
 filtro = (df["flEmail"] == 1) | (df["flYouTube"] == 1)
-df[filtro]
+df[filtro].shape  # condição OU
 
 # %%
 
@@ -58,7 +84,7 @@ filtro_produto_desejo = df_produto["DescCategoriaProduto"].isin(produtos_desejo)
 df_produto[filtro_produto_desejo]
 
 # %%
-
+produtos_desejo = ['lovers', 'present', 'chat', 'fiel']
 df_produto[df_produto["DescCategoriaProduto"].isin(produtos_desejo)]
 
 # %%

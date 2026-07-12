@@ -10,6 +10,7 @@ idades
 # %%
 
 media = sum(idades)/len(idades)
+media
 
 # %%
 

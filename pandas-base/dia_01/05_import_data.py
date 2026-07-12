@@ -1,7 +1,7 @@
 # %%
 
 import pandas as pd
-import gc
+# import gc #para deletar objetos na memória
 
 # %%
 
@@ -75,3 +75,4 @@ import sys
 
 # %%
 
+df.describe() 

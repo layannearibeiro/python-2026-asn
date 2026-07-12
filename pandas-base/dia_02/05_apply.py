@@ -22,6 +22,8 @@ def to_upper(x:str, fodase):
 
 df["DescCategoriaProduto"].apply(lambda x: to_upper(x, 0) )
 
+# apply nas linhas de uma coluna
+
 # %%
 
 print(to_upper(df["DescCategoriaProduto"].iloc[0]))

@@ -6,6 +6,7 @@
 def saudacao(nome:str):
     text = f"Olá, {nome.title()}! Boas vindas!"
     print(text)
+    
 
 # %%
 
